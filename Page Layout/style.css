@@ -1,0 +1,56 @@
+body{
+    background-image: url(spiration_dark.png);
+    background-size: cover;
+}
+
+#header {
+    background-color: #333333;
+    height: 100px;
+}
+
+#main {
+    margin: 50px auto;
+    width: 960px;
+    min-height: 100px;
+    background-color: #e2e60b
+    
+
+}
+#naujiena {
+    margin: 10px 5px 10px 10px;
+    width: 640px;
+    min-height: 100px;
+    background-color: #459e0a
+}
+
+#reklama {
+    margin: 10px 10px 10px 5px;
+    width: 320px;
+    min-height: 100px;
+    background-color: #cc310a
+}
+
+#footer {
+    height: 100px;
+    background-color: #333333;
+    max-height: 100px;
+}
+
+#vytis {
+    width: 100%;
+}
+
+h2{
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+  }
+
+.article {
+    width: 320px;
+    min-height: 100px;
+    background-color: steelblue;
+    margin: 10px; 
+}

@@ -1,0 +1,45 @@
+.OuterBox{
+    width: 260px;
+    padding: 20px;
+    border: 10px  inset  #d2e3ed;
+    border-radius: 10%;
+    margin: 10px 10px 0px 10px;
+}
+
+.OuterBox:hover{
+    border: outset dodgerblue;
+    -webkit-transform: scaleX(1.10) scaleY(1.10); /* Safari */
+    transform: scaleX(1.10) scaleY(1.10);
+    -webkit-transition: 2s;
+    transition: 2s;
+}
+
+.box{
+    /* background-color: red; */
+    width: 100%;
+    height: 375px;       
+}
+
+
+.container{
+    display: flex;
+}
+h2, p{
+    font-family: 'Jua', sans-serif;
+}
+
+.OuterBox h2, #year{
+    text-align: center;
+}
+
+p{
+    font-size: 15px;
+}
+
+img{
+    float: left;
+    /* margin: 5px 60px 0px 60px; */
+    border-radius: 50%;
+    width: 140px;
+    height: 120px;
+}

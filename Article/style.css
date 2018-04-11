@@ -1,0 +1,17 @@
+.author{
+    font-weight: bold;
+    font-style: italic;
+    /* font-size: 30px; */
+}
+
+.photo{
+    width: 400px;
+
+}
+
+body{
+    background-image: url(background.jpg);
+    background-size: cover;
+    margin: auto;
+    padding: auto;
+}

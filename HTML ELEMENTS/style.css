@@ -1,0 +1,49 @@
+body{
+    background-image: url("christmas-colour.png");
+}
+
+p{
+    background-color: tomato;
+}
+.greenText{
+    color:green;
+}
+
+.orangeText{
+    color:orange;
+}
+
+.goldText{
+    color:gold;
+}
+
+.firstParagraph{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.secondParagraph{
+    font-size: 31px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* CSS komentarai */
+.photo{
+    width: 400px;  
+    /* height: 100px;      */
+}
+
+.boldText{
+    font-weight: bold;
+}
+
+.table, .table td{
+    border: 2px solid rgba(82, 11, 248, 0.678);
+    border-collapse: collapse;
+    background-color: springgreen;
+    border-style: dashed;
+}
+
+.background{
+    background-color: turquoise;
+}

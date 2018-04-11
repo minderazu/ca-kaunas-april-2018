@@ -1,0 +1,31 @@
+body {
+    margin: 0px;
+}
+
+.yellow{
+    height: 360px;
+    background-color: #fdb913;
+
+}
+.green{
+    height: 360px;
+    background-color: #006a44;
+}
+.red{
+    height: 360px;
+    background-color: #c1272d;
+}
+
+.image {
+    height: 1080px;
+    display: block;
+    left: 7%;
+    right: auto;
+    top: -753px;
+    position: relative;
+}
+
+.text {
+    font-size: 30px;
+    text-transform: uppercase;
+}

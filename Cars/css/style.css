@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    background: #efefef;
+}
+
+#w1{
+    font-family: 'Lobster', cursive;
+    color:red;
+   -webkit-transition: 2s;
+   transition: 2s;
+}
+
+/* mouse over link */
+#w1:hover {
+    color: blue;
+    -webkit-transition: 2s;
+    transition: 2s;
+ }
+
+/* .flex-container{
+    display: flex;
+} */
+
+.d1{
+    width: 960px;
+    height: 200px;
+    background: orange;
+    /* margin: 20px; */
+}
+
+.d2{
+    width: 50%;
+    height: 200px;
+    background: green;
+    /* margin: 20px; */
+}

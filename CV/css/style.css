@@ -1,0 +1,67 @@
+body{
+    background: url(../img/background.png);
+}
+
+.main{
+    padding: 5px 25px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 595px;
+    background-color: white;
+    font-size: 12px;
+}
+
+#intro{
+    width: 100%;
+    height: 40%;
+    padding-bottom: 30px;
+    font-size: 15px;
+}
+
+img{
+    float: right;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    width: 30%;    
+    -webkit-transition: 2s;
+    transition: 2s;
+}
+
+img:hover{
+    float: right;
+    padding-right: 10px;
+    border-radius: 50%;
+    padding-left: 5px;
+    -webkit-transform: scaleX(1.15) scaleY(1.15); /* Safari */
+    transform: scaleX(1.15) scaleY(1.15);
+    -webkit-transition: 2s;
+    transition: 2s;
+    
+}
+
+
+#work, #education{
+    width: 100%;
+}
+
+table, tr.header{
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+tr.header{
+    font-weight: bold;
+}
+
+#second{
+    margin-top: 30px;
+}
+
+.txt-field{
+    display: block;
+    padding: 5px;
+    margin: 10px;
+}
