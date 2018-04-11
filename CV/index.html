@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +9,69 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <title>CV</title>
 </head>
+
 <body>
     <div class="main">
-        <h2>Mindaugas Razulevičius</h2>
-        <div id="intro">
-            <img src="https://media.licdn.com/dms/image/C5603AQFjeqPQnrxKYw/profile-displayphoto-shrink_200_200/0?e=1528480800&v=beta&t=P90EcePdIUM6WkOad3X9nQEcrUfqewuj8SlFq5oZ2l8" alt="">
-            <p>City: Kaunas</p>
-            <p>Age: 25</p>
-            <p>Hello, my name is Mindaugas Razulevičius and I am a web developer(almost!)</p>
-        </div>
+        <header>
+            <h2>Mindaugas Razulevičius</h2>
+            <div id="intro">
+                <img src="https://media.licdn.com/dms/image/C5603AQFjeqPQnrxKYw/profile-displayphoto-shrink_200_200/0?e=1528480800&v=beta&t=P90EcePdIUM6WkOad3X9nQEcrUfqewuj8SlFq5oZ2l8"
+                    alt="">
+                <p>City: Kaunas</p>
+                <p>Age: 25</p>
+                <p>Hello, my name is Mindaugas Razulevičius and I am a web developer(almost!)</p>
+            </div>
+        </header>
         <table id="work">
-            <tr class="header"><h3>Work Experience</h3>
-                <td>Company</td><td>Position</td><td>Year</td>
+            <tr class="header">
+                <h3>Work Experience</h3>
+                <th>Company</th>
+                <th>Position</th>
+                <th>Year</th>
             </tr>
             <tr>
-                <td>Western Union</td><td>Agent database admin</td><td>2017 02 - 2017 10</td>
+                <td>Western Union</td>
+                <td>Agent database admin</td>
+                <td>2017 02 - 2017 10</td>
             </tr>
             <tr>
-                <td>SEB</td><td>Assistant to SME client executive</td><td>2016 10 - 2017 02</td>
+                <td>SEB</td>
+                <td>Assistant to SME client executive</td>
+                <td>2016 10 - 2017 02</td>
             </tr>
         </table>
         <table id="education">
-            <tr class="header"><h3>Education</h3>
-                <td>Institution</td><td>Field</td><td>Year</td>
+            <tr class="header">
+                <h3>Education</h3>
+                <th>Institution</th>
+                <th>Field</th>
+                <th>Year</th>
             </tr>
             <tr>
-                <td>ISM University of Management and Economics</td><td>Interntional business and communication</td><td>2012 - 2016</td>
+                <td>ISM University of Management and Economics</td>
+                <td>Intl. business and communication</td>
+                <td>2012 - 2016</td>
             </tr>
+        </table>
+        <table id="languages">
+            <tr>
+                <h3>Languages</h3>
+                <th>Language</th>
+                <th>Proficiency</th>
+            </tr>
+            <tr>
+                <td>Lithuanian</td>
+                <td>Native</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>Superior</td>
+            </tr>
+            <tr>
+                <td>Russian</td>
+                <td>Limited</td>
+            </tr>
+
         </table>
         <div id="skills">
             <h3>Skills</h3>
@@ -50,14 +87,20 @@
         </div>
     </div>
     <div class="main" id="second">
-        <h2>Contact me using this form:</h2>
-        <input type="text" name="firstname" id="firstname" class="txt-field" placeholder="Your name...">
-        <input type="text" name="lastname" id="lastname" class="txt-field" placeholder="Your last name...">
-        <input type="text" name="email" id="email" class="txt-field" placeholder="Your email...">
-        <div>
-            <textarea type="text" name="message" id="message" placeholder="Write your message here..."></textarea>
-        </div>
+        <form id="contact">
+            <h2>Contact me using this form:</h2>
+            <input type="text" name="firstname" id="firstname" class="txt-field" placeholder="Your name...">
+            <input type="text" name="lastname" id="lastname" class="txt-field" placeholder="Your last name...">
+            <input type="text" name="email" id="email" class="txt-field" placeholder="Your email...">
+            <div>
+                <textarea type="text" name="message" id="message" placeholder="Write your message here..."></textarea>
+            </div>
+            <button type="submit" class="btn">
+                <i class="fas fa-paper-plane"></i> Submit</button>
+        </form>
     </div>
-    
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
