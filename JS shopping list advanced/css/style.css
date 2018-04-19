@@ -1,0 +1,22 @@
+#upper_section{
+    background: gray;
+    border-bottom: 2px solid #000000;
+}
+.white{
+    background: #fff;
+}
+
+.box
+{
+    padding: 30px;
+    /* border: 2px solid black; */
+}
+
+.bordered{
+    padding: 10px;
+    border: 2px solid #000;
+}
+
+#lower_section{
+    background: #fff;
+}

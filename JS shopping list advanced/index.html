@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <section id="upper_section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="white">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="box">
+                                <div class="bordered">
+                                    <h1>Produktų registracija</h1>
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="formGroupExampleInput">Produktas</label>
+                                            <input type="text" class="form-control" id="product_name" placeholder="Example input">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="formGroupExampleInput2">Kaina</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id="product_quantity">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">Eur</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="formGroupExampleInput2">Kiekis</label>
+                                            <input type="text" class="form-control" id="product_price" placeholder="Another input">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="formGroupExampleInput2">Miestas</label>
+                                            <input type="text" class="form-control" id="order_city" placeholder="Another input" onkeyup="releaseButton()">
+                                        </div>
+
+                                        <div class="d-flex justify-content-between">
+                                            <div class="p-2">
+                                                <button type="button" id="btn_add" class="btn btn-primary" onclick="add()" disabled>Sukurti</button>
+                                            </div>
+                                            <div class="p-2">
+                                                <div class="text-right">
+                                                    <a href="#" id="cancel">Atšaukti</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="lower_section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="box">
+                        <div class="bordered">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Pavadinimas</th>
+                                        <th>Kiekis</th>
+                                        <th>Kaina</th>
+                                        <th>Miestas</th>
+                                        <th>Veiksmas</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="product_list">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- My JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
