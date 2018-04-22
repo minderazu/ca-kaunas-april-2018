@@ -1,0 +1,12 @@
+section{
+    padding: 20px;
+}
+
+.content{
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.currency{
+    padding: 10px 0;
+}
