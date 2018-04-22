@@ -43,7 +43,7 @@ function add() {
         // show alert - product exists    
         alert("Produktas jau įvestas!");
     }
-
+    resetForm();
     let products_string = JSON.stringify(products);
     // //
     localStorage.setItem("ProdList", products_string);
@@ -51,6 +51,7 @@ function add() {
     print_products(products);
     // // print_sum(products);
     document.getElementById("btn_add").disabled = true;
+
 }
 
 
@@ -59,13 +60,20 @@ function add() {
 
 function print_products(products) {
     let h = "";
-    for (let i = 0; i < products.length; i++) {          
-        h = h + "<tr><td>" + products[i].name + "</td><td>" + products[i].quantity + "</td><td>"
-            + products[i].price + "</td><td>" + products[i].city + "</td>" + "<td>" + '<a href="#" onclick="clearEntry(this)" id="btnRem">Šąlinti</a>' + "</td>" + "</tr>";
-        
-        
-    document.getElementById("product_list").innerHTML = h;
-}
+    if (products != null) {
+        for (let i = 0; i < products.length; i++) {
+            h = h + "<tr><td>" + products[i].name + "</td><td>" + products[i].quantity + "</td><td>"
+                + products[i].price + "</td><td>" + products[i].city + "</td><td>"
+                + '<a href="#" onclick="clearEntry(this)" id="btnRem">Šąlinti</a>' + "</td></tr>";
+
+               
+
+        }
+         document.getElementById("product_list").innerHTML = h;
+    } else {
+        document.getElementById("product_list").innerHTML = h;
+
+    }
 }
 function checkForDuplicates(new_product, products) {
     let found = false;
@@ -88,13 +96,14 @@ function checkForDuplicates(new_product, products) {
 
 function releaseButton() {
     document.getElementById("btn_add").disabled = false;
-    // document.getElementById("btn_clear").disabled = false;
+    document.getElementById("btn_clear").disabled = false;
 
 }
 
 function clearLocStorage() {
     localStorage.removeItem("ProdList");
-    location.reload();
+    products = [];
+    print_products();
     document.getElementById("btn_clear").disabled = true;
 }
 
@@ -103,13 +112,11 @@ function clearEntry(a) {
     products.splice(i, 1);
     var row = a.parentNode.parentNode;
     row.parentNode.removeChild(row);
+    // JSON
     let products_string = JSON.stringify(products);
-    //
     localStorage.setItem("ProdList", products_string);
-    
-    // // atvaizduoti masyva
-    // // print_sum(products);
+}
 
-    // location.reload();
-  
+function resetForm() {
+    document.getElementById("my_form").reset();
 }
