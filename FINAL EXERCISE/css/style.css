@@ -1,0 +1,75 @@
+.background {
+  height: 960px;
+  background-image: url(../img/connectwork.png);
+}
+
+#top {
+  background: #000;
+  height: 140px;
+}
+
+.top {
+  color: #fff;
+  padding-top: 40px;
+}
+
+header {
+  color: #fff;
+  padding-top: 40px;
+  width: auto;
+  text-align: left;
+}
+
+#top h1 {
+  color: #fff;
+  margin-left: 20px;
+}
+
+.image {
+  margin-right: 20px;
+  height: 140px;
+  text-align: right;
+}
+
+#year_filter {
+  color: #fff;
+  margin-top: 30px;
+  padding: 10px;
+
+  text-align: center;
+}
+
+.tarpas {
+  height: 50px;
+}
+
+#filter,
+#year_select {
+  margin: 0 20px;
+}
+
+#all_films {
+  color: #fff;
+  display: none;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#all_films img {
+  border-radius: 5px;
+}
+
+#top_film img {
+  border-radius: 5px;
+}
+
+#top_film {
+  color: #fff;
+}
+
+.border_line {
+  margin-top: 20px;
+  height: 40px;
+  border-top: 2px dashed #fff;
+}
