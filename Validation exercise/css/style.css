@@ -1,0 +1,14 @@
+body{
+    background: white;
+    padding: 20px;
+}
+
+.box{
+    padding: 20px;
+    border: 3px solid black;
+    text-align: center;
+}
+
+.message{
+    padding: 20px;
+}
